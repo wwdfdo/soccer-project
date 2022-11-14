@@ -1,0 +1,121 @@
+.survivors {
+  clip-path: url(#survivors-clip);
+}
+
+.item-parishoot {
+  clip-path: url(#what-clip);
+}
+
+.bottle {
+  clip-path: url(#atsui-clip);
+}
+
+.fourth-card {
+  clip-path: url(#enter-clip);
+}
+
+.fifth-card {
+  clip-path: url(#summit-clip);
+}
+.sixth-card {
+  clip-path: url(#partner-clip);
+}
+
+.number {
+  -webkit-text-stroke: 1px #000;
+  color: white;
+  font-size: 4.7rem;
+  font-weight: 900;
+}
+
+.animation {
+  transition: all 0.4s ease 0s;
+}
+.item:hover .card-outline {
+  opacity: 1;
+}
+
+.item:hover .survivor-title {
+  transform: translate3d(10%, 0, 0);
+}
+.item:hover .atsui-question {
+  transform: translate3d(10%, 0, 0);
+}
+
+.item:hover .atsui-house {
+  transform: translate3d(10%, 0, 0);
+}
+.item:hover .number {
+  transform: translate3d(-20%, 0, 0);
+}
+.item:hover .survivor-arrow {
+  opacity: 1;
+}
+.item:hover .survivor-girl {
+  transform: translate3d(10%, 0, 0) scale(1.3);
+}
+.item:hover .parishoots {
+  transform: translate3d(10%, 0, 0) scale(1.3);
+}
+.item:hover .bottle {
+  transform: translate3d(10%, 0, 0) scale(1.4);
+}
+.item:hover .lost-survivor {
+  transform: translate3d(5%, 0, 0) scale(1.2);
+}
+.item:hover .back-girl {
+  transform: translate3d(0, 20%, 0) scale(1.1);
+}
+.item:hover .speaker {
+  transform: scale(1.2);
+}
+
+.item:hover .revealed {
+  opacity: 1;
+}
+
+.textslide-w {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 140px;
+
+  overflow: hidden;
+}
+
+.textslide {
+  position: absolute;
+  display: block;
+  margin: auto auto;
+  white-space: nowrap;
+
+  height: 100%;
+}
+
+.textslide span {
+  display: inline-block;
+  padding-left: 100%;
+  text-align: center;
+  -webkit-text-stroke: 1px #808080;
+  white-space: nowrap;
+  min-width: 100%;
+  height: 100%;
+  line-height: 140px;
+  color: #808080;
+  font-size: 44px;
+  font-weight: 900;
+  animation: animate 28s linear infinite;
+}
+
+.textslide2 span {
+  animation-delay: 14s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(-7.5px, 0);
+  }
+}

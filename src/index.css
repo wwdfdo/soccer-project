@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip-your-needful-style {
+    -webkit-clip-path: inset(10px round 80px 20px 30px 10px);
+    clip-path: inset(10px round 80px 20px 30px 10px);
+  }
+}

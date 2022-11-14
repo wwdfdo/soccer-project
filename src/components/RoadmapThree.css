@@ -1,0 +1,15 @@
+.first {
+  clip-path: polygon(0 0, 100% 0, 89% 100%, 0 100%);
+}
+.second {
+  clip-path: polygon(11% 0%, 100% 0, 100% 100%, 0 100%);
+}
+.third {
+  clip-path: polygon(0 0, 79% 0, 100% 100%, 0 100%);
+}
+.fourth {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 100%);
+}
+.fifth {
+  clip-path: polygon(0 0, 93% 0, 100% 100%, 0 100%);
+}
