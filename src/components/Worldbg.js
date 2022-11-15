@@ -1,5 +1,5 @@
 import React from "react";
-import worldbg from "../images/world1.mp4";
+// import worldbg from "../images/world1.mp4";
 
 function Worldbg() {
   return (

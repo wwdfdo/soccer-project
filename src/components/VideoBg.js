@@ -1,17 +1,28 @@
 import React from "react";
 // import Branz from "../images/beanz2.mp4";
 // import Rock from "../images/rock.png";
-import player from "../images/player1.png";
+import player from "../images/fb-player.webp";
+import football from "../images/football.png";
 // import { MdKeyboardArrowRight } from "react-icons/md";
-
+import {
+  MouseParallaxContainer,
+  MouseParallaxChild,
+} from "react-parallax-mouse";
 function VideoBg() {
   return (
-    <div className="relative h-screen w-full bg-viewportBg bg-no-repeat bg-cover bg-center ">
-      <img
-        className="w-1/2 mx-auto absolute translate-x-1/2 translate-y-1/4"
-        src={player}
-        alt=""
-      />
+    <div className="relative h-screen w-full bg-viewportBg bg-no-repeat bg-cover bg-center  ">
+      <MouseParallaxContainer>
+        <MouseParallaxChild factorX={0.08} factorY={0.05}>
+          <img className="w-3/5 mx-auto mt-10" src={player} alt="" />
+        </MouseParallaxChild>
+        <MouseParallaxChild factorX={0.07} factorY={0.09}>
+          <img
+            className="w-[150px] absolute bottom-96 left-[17%]"
+            src={football}
+            alt=""
+          />
+        </MouseParallaxChild>
+      </MouseParallaxContainer>
 
       {/* <video loop autoPlay muted className="w-full h-screen object-cover">
         <source src={Branz} type="video/mp4" />
