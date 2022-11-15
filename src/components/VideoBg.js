@@ -48,7 +48,7 @@ function VideoBg() {
       </div> */}
       <div className=" absolute top-[25%] right-[6%] bg-black bg-opacity-40 w-1/4 p-8 rounded-lg">
         <div className="mb-6">
-          <h4 className="text-xl text-white hover:text-red-500 font-bold cursor-pointer">
+          <h4 className="text-xl text-white hover:text-[#ff0000] font-bold cursor-pointer">
             Football World Cup Finals
           </h4>
           <p className="text-lg font-semibold text-gray-400 hover:text-white">
@@ -56,7 +56,7 @@ function VideoBg() {
           </p>
         </div>
         <div className="mb-6">
-          <h4 className="text-xl text-white hover:text-red-500 font-bold cursor-pointer">
+          <h4 className="text-xl text-white hover:text-[#ff0000] font-bold cursor-pointer">
             The Team that You Support!
           </h4>
 
@@ -65,7 +65,7 @@ function VideoBg() {
           </p>
         </div>
         <div>
-          <h4 className="text-xl text-white hover:text-red-500 font-bold cursor-pointer">
+          <h4 className="text-xl text-white hover:text-[#ff0000] font-bold cursor-pointer">
             Why Soccer is the Best Sport
           </h4>
 
