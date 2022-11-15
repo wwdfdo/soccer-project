@@ -15,7 +15,7 @@ function VideoBg() {
     <div className="relative h-screen w-full bg-viewportBg bg-no-repeat bg-cover bg-center  ">
       <MouseParallaxContainer>
         <MouseParallaxChild factorX={0.08} factorY={0.05}>
-          <img className="w-1/2 mx-auto mt-20" src={player1} alt="" />
+          <img className="w-1/2 mx-auto mt-28" src={player1} alt="" />
         </MouseParallaxChild>
 
         {/* <MouseParallaxChild factorX={0.08} factorY={0.05}>
@@ -47,21 +47,30 @@ function VideoBg() {
         </button>
       </div> */}
       <div className=" absolute top-[25%] right-[6%]">
-        <div className="mb-10">
+        <div className="mb-6">
           <h4 className="text-xl text-white hover:text-red-500 font-bold cursor-pointer">
-            The Team that You Support!
+            Football World Cup Finals
           </h4>
           <p className="text-lg font-semibold text-gray-500 hover:text-white">
             Friday, September 14, 2018
           </p>
         </div>
-        <div>
+        <div className="mb-6">
           <h4 className="text-xl text-white hover:text-red-500 font-bold cursor-pointer">
             The Team that You Support!
           </h4>
 
           <p className="text-lg font-semibold text-gray-500 hover:text-white">
             Friday, September 14, 2018
+          </p>
+        </div>
+        <div>
+          <h4 className="text-xl text-white hover:text-red-500 font-bold cursor-pointer">
+            Why Soccer is the Best Sport
+          </h4>
+
+          <p className="text-lg font-semibold text-gray-500 hover:text-white">
+            Saturday, September 22, 2018
           </p>
         </div>
       </div>

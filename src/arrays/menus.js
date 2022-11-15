@@ -9,11 +9,7 @@ export const menus = [
     name: "Home",
     url: "/",
   },
-  {
-    id: 2,
-    name: "Home2",
-    url: "/worldbg",
-  },
+
   {
     id: 3,
     name: "FIFA Battles",
