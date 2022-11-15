@@ -1,5 +1,5 @@
 import React from "react";
-// import logo from "../images/Azuki Logo White.svg";
+import logo from "../images/logo2.webp";
 import { menus } from "../arrays/menus";
 import { Link } from "react-router-dom";
 
@@ -7,9 +7,8 @@ function Header() {
   return (
     <div className="w-full flex justify-center">
       <div className=" fixed flex justify-between min-h-[100px] items-center w-[95%] mx-auto z-10  ">
-        <div className="p-2 bg-gradient-to-r from-red-900 rounded-3xl font-extrabold text-xl text-white">
-          {/* <img className="w-16 " src={logo} alt="" /> */}
-          FIFA BATTLES
+        <div className="p-2 bg-gradient-to-r  rounded-3xl font-extrabold text-xl text-white">
+          <img className="w-[180px]" src={logo} alt="" />
         </div>
         <ul className="flex gap-5 items-center">
           {menus.map((menu) => (
