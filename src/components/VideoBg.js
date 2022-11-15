@@ -46,7 +46,7 @@ function VideoBg() {
           </span>
         </button>
       </div> */}
-      <div className=" absolute top-[25%] right-[6%] bg-black bg-opacity-40 w-[350px] p-10 rounded-lg">
+      <div className=" absolute top-[25%] right-[6%] bg-black bg-opacity-40 w-1/4 p-8 rounded-lg">
         <div className="mb-6">
           <h4 className="text-xl text-white hover:text-red-500 font-bold cursor-pointer">
             Football World Cup Finals
