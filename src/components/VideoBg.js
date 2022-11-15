@@ -46,6 +46,40 @@ function VideoBg() {
           </span>
         </button>
       </div> */}
+      <div className=" absolute top-[25%] right-[6%]">
+        <div className="mb-10">
+          <h4 className="text-xl text-white hover:text-red-500 font-bold cursor-pointer">
+            The Team that You Support!
+          </h4>
+          <p className="text-lg font-semibold text-gray-500 hover:text-white">
+            Friday, September 14, 2018
+          </p>
+        </div>
+        <div>
+          <h4 className="text-xl text-white hover:text-red-500 font-bold cursor-pointer">
+            The Team that You Support!
+          </h4>
+
+          <p className="text-lg font-semibold text-gray-500 hover:text-white">
+            Friday, September 14, 2018
+          </p>
+        </div>
+      </div>
+      <div className=" absolute bottom-10 left-10 flex flex-col gap-6">
+        <p className="text-red-600 text-xl font-bold"> WELCOME</p>
+        <h2 className=" text-7xl font-bold text-white">
+          FOOTBALL CLUB <br />
+          UNITED
+        </h2>
+        <p className="text-lg text-gray-200">
+          Ticket prices for the international challenge match between FC United
+          <br />
+          and Spain have been confirmed for October's encounter.
+        </p>
+        <button className="text-center text-xl px-6 py-2 font-semibold  bg-red-700 w-[160px] rounded-3xl">
+          Read More
+        </button>
+      </div>
     </div>
   );
 }
