@@ -1,8 +1,10 @@
 import React from "react";
 // import Branz from "../images/beanz2.mp4";
 // import Rock from "../images/rock.png";
-import player from "../images/fb-player.webp";
-import football from "../images/football.png";
+// import player from "../images/fb-player.webp";
+import player1 from "../images/player1.png";
+
+// import football from "../images/football.png";
 // import { MdKeyboardArrowRight } from "react-icons/md";
 import {
   MouseParallaxContainer,
@@ -13,6 +15,10 @@ function VideoBg() {
     <div className="relative h-screen w-full bg-viewportBg bg-no-repeat bg-cover bg-center  ">
       <MouseParallaxContainer>
         <MouseParallaxChild factorX={0.08} factorY={0.05}>
+          <img className="w-1/2 mx-auto mt-20" src={player1} alt="" />
+        </MouseParallaxChild>
+
+        {/* <MouseParallaxChild factorX={0.08} factorY={0.05}>
           <img className="w-3/5 mx-auto mt-10" src={player} alt="" />
         </MouseParallaxChild>
         <MouseParallaxChild factorX={0.07} factorY={0.09}>
@@ -21,7 +27,7 @@ function VideoBg() {
             src={football}
             alt=""
           />
-        </MouseParallaxChild>
+        </MouseParallaxChild> */}
       </MouseParallaxContainer>
 
       {/* <video loop autoPlay muted className="w-full h-screen object-cover">
