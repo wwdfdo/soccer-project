@@ -85,7 +85,7 @@ function VideoBg() {
           <br />
           and Spain have been confirmed for October's encounter.
         </p>
-        <button className="text-center text-xl px-4 py-2 font-semibold  bg-red-700 w-[180px] rounded-3xl">
+        <button className="text-center text-md px-6 py-4 font-semibold text-white hover:text-black  bg-[#ff0000] hover:bg-white w-[190px] rounded-3xl">
           Read More
         </button>
       </div>
