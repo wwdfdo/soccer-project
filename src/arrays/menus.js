@@ -11,31 +11,36 @@ export const menus = [
   },
   {
     id: 2,
+    name: "Home2",
+    url: "/worldbg",
+  },
+  {
+    id: 3,
     name: "FIFA Battles",
     url: "/gallery",
   },
   {
-    id: 3,
+    id: 4,
     name: "Matches",
     url: "/worldbg",
   },
   {
-    id: 4,
+    id: 5,
     name: "Features",
     url: "/roadmap",
   },
   {
-    id: 5,
+    id: 6,
     name: "Shop",
     url: "/roadmapTwo",
   },
   {
-    id: 6,
+    id: 7,
     name: "Contacts",
     url: "/roadmapThree",
   },
   {
-    id: 7,
+    id: 8,
     name: <FaUser size={20} />,
     url: "/",
   },

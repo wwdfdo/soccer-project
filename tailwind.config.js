@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         viewportBg: "url('/src/images/stadium7.jpg')",
+        stadium2: "url('/src/images/stadium2.webp')",
       },
     },
   },
