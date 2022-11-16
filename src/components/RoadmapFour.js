@@ -3,16 +3,8 @@ import "./RoadmapFour.css";
 
 function RoadmapFour() {
   return (
-    <div className=" flex justify-center h-[100vh] items-center">
-      <div class="gallery">
-        <div className=" bg-red-500"></div>
-        <div className=" bg-red-500"></div>
-        <div className=" bg-red-500"></div>
-        <div className=" bg-red-500"></div>
-        <div className=" bg-red-500"></div>
-        <div className=" bg-red-500"></div>
-        <div className=" bg-red-500"></div>
-      </div>
+    <div className=" flex justify-center h-[100vh] items-center mt-10">
+      <span className="bg-red-800 hex"></span>
     </div>
   );
 }
