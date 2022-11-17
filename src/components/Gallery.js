@@ -31,11 +31,11 @@ function Gallery() {
   return (
     <div className=" bg-[#40085b]">
       <div className="flex w-[95%] mx-auto justify-between pt-[5rem]">
-        <section className="flex flex-col gap-2 mt-4 w-[22%]">
-          <h2 className="text-2xl font-bold pb-9 border-b-[.0825rem] border-black border-opacity-10">
+        <section className="flex flex-col gap-2 mt-4 w-[22%] ">
+          <h2 className="text-2xl font-bold pb-9 border-b-[.0825rem] border-black border-opacity-10 text-white">
             FILTER
           </h2>
-          <div className="text-yellow-500 font-bold text-md border-b-[.0825rem] border-black border-opacity-10 pb-2 pt-5">
+          <div className="text-white font-bold text-md border-b-[.0825rem] border-black border-opacity-10 pb-2 pt-5 ">
             GOLDEN MODE
           </div>
 
@@ -116,7 +116,7 @@ function Gallery() {
                 }
               >
                 <img className=" rounded-md" src={nft.name} alt="" />
-                <div className="flex flex-col items-center mt-2 text-gray-500">
+                <div className="flex flex-col items-center mt-2 text-white">
                   <p className="text-sm font-bold">{nft.title}</p>
                   <p className="text-sm font-bold">{nft.price}</p>
                 </div>
