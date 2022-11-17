@@ -29,7 +29,7 @@ function Gallery() {
   };
 
   return (
-    <div>
+    <div className=" bg-[#40085b]">
       <div className="flex w-[95%] mx-auto justify-between pt-[5rem]">
         <section className="flex flex-col gap-2 mt-4 w-[22%]">
           <h2 className="text-2xl font-bold pb-9 border-b-[.0825rem] border-black border-opacity-10">
