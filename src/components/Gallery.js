@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HiCollection } from "react-icons/hi";
+import { HiUserGroup } from "react-icons/hi";
 import { TiArrowRepeat } from "react-icons/ti";
 import { BsArrowRightShort } from "react-icons/bs";
 import Gvideo from "../images/tbagus.mp4";
@@ -37,13 +38,18 @@ function Gallery() {
   };
 
   useEffect(() => {
+    const allCatogories = [
+      { qtitle: "All Players", icon: <HiUserGroup size={22} /> },
+      ...QuestionArray,
+    ];
     setProducts(nfts);
-    setProductCatogories(QuestionArray);
+    setProductCatogories(allCatogories);
   });
 
-  const filtered = selectedCatogory
-    ? produts.filter((m) => m.qtitle === selectedCatogory.qtitle)
-    : produts;
+  const filtered =
+    selectedCatogory && selectedCatogory.batch
+      ? produts.filter((m) => m.batch === selectedCatogory.batch)
+      : produts;
 
   return (
     <div className=" bg-[#40085b]">

@@ -24,6 +24,7 @@ export const nfts = [
     title: "AZUKI",
     qtitle: "Common",
     price: "NO.6456",
+    batch: "common",
     id: 1,
     name: nft1,
     bgcolor: "bg-[#256614]",
@@ -64,7 +65,7 @@ export const nfts = [
     title: "AZUKI",
     qtitle: "Epic",
     price: "NO.6767",
-
+    batch: "epic",
     id: 2,
     name: nft2,
     bgcolor: "bg-[#3C0656]",
@@ -117,6 +118,7 @@ export const nfts = [
   {
     title: "AZUKI",
     qtitle: "Legendary",
+    batch: "legendary",
     price: "NO.4564",
     id: 3,
     name: nft3,
@@ -155,6 +157,7 @@ export const nfts = [
   {
     title: "AZUKI",
     qtitle: "Champion",
+    batch: "champion",
     price: "NO.3476",
     id: 4,
     name: nft4,
