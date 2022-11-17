@@ -9,7 +9,7 @@ import {
 
 function Worldbg() {
   return (
-    <div className="relative h-screen w-full bg-viewportBg4 bg-no-repeat bg-cover bg-top ">
+    <div className="relative h-screen w-full bg-viewportBg4 bg-no-repeat bg-cover bg-center ">
       <MouseParallaxContainer>
         <MouseParallaxChild factorX={0.08} factorY={0.05}>
           <img className="w-1/2 mx-auto mt-28" src={player1} alt="" />
