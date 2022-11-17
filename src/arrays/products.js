@@ -116,7 +116,7 @@ export const nfts = [
     price: "NO.4564",
     id: 3,
     name: nft3,
-    bgcolor: "bg-[#c62f42]",
+    bgcolor: "bg-[#A3821D]",
     serialno: 763,
     obj: [
       { category: "TYPE:", type: "HUMAN", icon: <BiFace size={24} /> },
@@ -153,7 +153,7 @@ export const nfts = [
     price: "NO.3476",
     id: 4,
     name: nft4,
-    bgcolor: "bg-[#bbbeb7]",
+    bgcolor: "bg-[#59595C]",
     serialno: 898,
     obj: [
       { category: "TYPE:", type: "HUMAN", icon: <BiFace size={24} /> },
