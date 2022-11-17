@@ -41,7 +41,7 @@ function Gallery() {
 
           <form className="flex items-center border-b-[.0825rem] border-black border-opacity-10 py-3">
             <button>
-              <GoSearch size={24} />
+              <GoSearch size={24} className="text-white" />
             </button>
             <input
               className=" pl-2 outline-none rounded-lg text-lg ml-5"
