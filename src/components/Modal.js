@@ -16,11 +16,11 @@ function Modal(props) {
         <img src={modalImg} className="max-w-full rounded-2xl" alt="" />
         <div className="w-2/3 flex flex-col justify-between px-10 py-8">
           <div className="w-full  flex items-center bg-black bg-opacity-10 py-2 px-4 gap-3 rounded-lg text-white font-semibold">
-            <span className=" text-4xl opacity-30">#</span>
+            <span className>#</span>
             <div className=" flex flex-col">
-              <span className="text-sm opacity-30">AZUKI</span>
+              <span className="text-sm">AZUKI</span>
               <span className="text-xl font-bold">
-                {modalSrialNo} <span className=" opacity-30">//</span>
+                {modalSrialNo} <span>//</span>
               </span>
             </div>
           </div>
@@ -29,7 +29,7 @@ function Modal(props) {
               <div className=" bg-white bg-opacity-10 rounded-lg py-2 px-4 flex items-center gap-2">
                 <div>{item.icon}</div>
                 <div className="flex flex-col">
-                  <span className="opacity-30">{item.category}</span>
+                  <span className="text-white">{item.category}</span>
                   <span>{item.type}</span>
                 </div>
               </div>

@@ -40,10 +40,11 @@ function Gallery() {
           </div>
 
           <form className="flex items-center border-b-[.0825rem] border-black border-opacity-10 py-3">
-            <button></button>
-            <GoSearch size={24} />
+            <button>
+              <GoSearch size={24} />
+            </button>
             <input
-              className=" pl-2 outline-none rounded-lg text-lg"
+              className=" pl-2 outline-none rounded-lg text-lg ml-5"
               type="search"
               id="site-search"
               name="q"
