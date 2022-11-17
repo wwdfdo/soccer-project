@@ -25,7 +25,7 @@ export const nfts = [
     price: "NO.6456",
     id: 1,
     name: nft1,
-    bgcolor: "bg-[#a19e99]",
+    bgcolor: "bg-[#43bd25]",
     serialno: 243,
     obj: [
       { category: "TYPE:", type: "HUMAN", icon: <BiFace size={24} /> },
