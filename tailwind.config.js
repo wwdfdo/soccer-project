@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         viewportBg: "url('/src/images/stadium7.jpg')",
+        viewportBg2: "url('/src/images/stadium8.jpg')",
         stadium2: "url('/src/images/stadium2.webp')",
       },
     },

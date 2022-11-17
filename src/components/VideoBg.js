@@ -12,7 +12,7 @@ import {
 } from "react-parallax-mouse";
 function VideoBg() {
   return (
-    <div className="relative h-screen w-full bg-viewportBg bg-no-repeat bg-cover bg-center ">
+    <div className="relative h-screen w-full bg-viewportBg2 bg-no-repeat bg-cover bg-top ">
       <MouseParallaxContainer>
         <MouseParallaxChild factorX={0.08} factorY={0.05}>
           <img className="w-1/2 mx-auto mt-28" src={player1} alt="" />
@@ -48,7 +48,7 @@ function VideoBg() {
       </div> */}
       <div className=" absolute top-[25%] right-[6%] bg-black bg-opacity-40 w-1/4 p-8 rounded-lg">
         <div className="mb-6">
-          <h4 className="text-xl text-white hover:text-[#ff0000] font-bold cursor-pointer">
+          <h4 className="text-xl text-white hover:text-[#dc4eec] font-bold cursor-pointer">
             Football World Cup Finals
           </h4>
           <p className="text-lg font-semibold text-gray-400 hover:text-white">
@@ -56,7 +56,7 @@ function VideoBg() {
           </p>
         </div>
         <div className="mb-6">
-          <h4 className="text-xl text-white hover:text-[#ff0000] font-bold cursor-pointer">
+          <h4 className="text-xl text-white hover:text-[#dc4eec] font-bold cursor-pointer">
             The Team that You Support!
           </h4>
 
@@ -65,7 +65,7 @@ function VideoBg() {
           </p>
         </div>
         <div>
-          <h4 className="text-xl text-white hover:text-[#ff0000] font-bold cursor-pointer">
+          <h4 className="text-xl text-white hover:text-[#dc4eec] font-bold cursor-pointer">
             Why Soccer is the Best Sport
           </h4>
 
@@ -75,7 +75,7 @@ function VideoBg() {
         </div>
       </div>
       <div className=" absolute bottom-10 left-10 flex flex-col gap-6">
-        <p className="text-red-600 text-xl font-bold"> WELCOME</p>
+        <p className="text-[#ff33ff] text-xl font-bold"> WELCOME</p>
         <h2 className=" text-7xl font-bold text-white">
           FOOTBALL CLUB <br />
           UNITED
@@ -85,7 +85,7 @@ function VideoBg() {
           <br />
           and Spain have been confirmed for October's encounter.
         </p>
-        <button className="text-center text-md px-6 py-4 font-semibold text-white hover:text-black  bg-[#ff0000] hover:bg-white w-[190px] rounded-3xl">
+        <button className="text-center text-md px-6 py-4 font-semibold text-white  bg-[#ff33ff] hover:bg-[#309bf2] w-[190px] rounded-3xl">
           Read More
         </button>
       </div>
