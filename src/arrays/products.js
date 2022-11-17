@@ -22,6 +22,7 @@ import { SiRedhat } from "react-icons/si";
 export const nfts = [
   {
     title: "AZUKI",
+    qtitle: "Common",
     price: "NO.6456",
     id: 1,
     name: nft1,
@@ -61,7 +62,9 @@ export const nfts = [
   },
   {
     title: "AZUKI",
+    qtitle: "Epic",
     price: "NO.6767",
+
     id: 2,
     name: nft2,
     bgcolor: "bg-[#3C0656]",
@@ -113,6 +116,7 @@ export const nfts = [
   },
   {
     title: "AZUKI",
+    qtitle: "Legendary",
     price: "NO.4564",
     id: 3,
     name: nft3,
@@ -150,6 +154,7 @@ export const nfts = [
   },
   {
     title: "AZUKI",
+    qtitle: "Champion",
     price: "NO.3476",
     id: 4,
     name: nft4,

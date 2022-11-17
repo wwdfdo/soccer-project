@@ -6,25 +6,25 @@ import { BiFace } from "react-icons/bi";
 export const QuestionArray = [
   {
     id: 1,
-    qtitle: "TYPE",
+    qtitle: "Common",
     answer: ["HUMAN", "BLUE", "RED", "GREEN"],
     icon: <GiLoincloth size={22} />,
   },
   {
     id: 2,
-    qtitle: "SPECIAL",
+    qtitle: "Epic",
     answer: ["MAN", "BLUE", "RED", "GREEN"],
     icon: <AiFillFire size={22} />,
   },
   {
     id: 3,
-    qtitle: "CLOTHING",
+    qtitle: "Legendary",
     answer: ["WOMEN", "BLUE", "RED", "GREEN"],
     icon: <ImScissors size={22} />,
   },
   {
     id: 4,
-    qtitle: "OFFHAND",
+    qtitle: "Champion",
     answer: ["CHILD", "BLUE", "RED", "GREEN"],
     icon: <BiFace size={22} />,
   },

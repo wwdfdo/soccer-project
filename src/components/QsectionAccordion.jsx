@@ -1,15 +1,18 @@
 import React from "react";
 import { useState } from "react";
-import { QuestionArray } from "../arrays/questionsArray";
 
-const QsectionAccordion = () => {
+const QsectionAccordion = (props) => {
   const [visibleAccordionId, setVisibleAccordionId] = useState(null);
+
+  const { onFilter, productCatogories } = props;
+
   return (
     <>
-      {QuestionArray.map((Question) => (
+      {productCatogories.map((Question) => (
         <div
           key={Question.id}
           className="mb-3 border-b-[.0825rem] border-black border-opacity-10 pb-3 text-white"
+          onClick={() => onFilter(Question)}
         >
           <div
             className="flex justify-between items-center"
@@ -31,7 +34,7 @@ const QsectionAccordion = () => {
               ></i>
             </span>
           </div>
-          <div
+          {/* <div
             className={`${
               visibleAccordionId === Question.id ? "" : "hidden"
             } mt-4`}
@@ -44,7 +47,7 @@ const QsectionAccordion = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
       ))}
     </>

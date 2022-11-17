@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiCollection } from "react-icons/hi";
 import { TiArrowRepeat } from "react-icons/ti";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -8,6 +8,7 @@ import { GoSearch } from "react-icons/go";
 import QsectionAccordion from "./QsectionAccordion";
 import Modal from "./Modal";
 import BackDrop from "./BackDrop";
+import { QuestionArray } from "../arrays/questionsArray";
 
 function Gallery() {
   const [openModal, setOpenModal] = useState(false);
@@ -15,6 +16,9 @@ function Gallery() {
   const [modalImg, setModalImg] = useState();
   const [modalSrialNo, setModalSrialNo] = useState();
   const [modalobj, setModalObj] = useState();
+  const [selectedCatogory, setSelectedCatogory] = useState();
+  const [produts, setProducts] = useState([]);
+  const [productCatogories, setProductCatogories] = useState([]);
 
   const modalHandler = (bgcolor, modalImg, modalSrialNo, modalobj) => {
     setOpenModal(true);
@@ -27,6 +31,19 @@ function Gallery() {
   const cancelHandler = () => {
     setOpenModal(false);
   };
+
+  const handleFilter = (choosedProduct) => {
+    setSelectedCatogory(choosedProduct);
+  };
+
+  useEffect(() => {
+    setProducts(nfts);
+    setProductCatogories(QuestionArray);
+  });
+
+  const filtered = selectedCatogory
+    ? produts.filter((m) => m.qtitle === selectedCatogory.qtitle)
+    : produts;
 
   return (
     <div className=" bg-[#40085b]">
@@ -52,7 +69,10 @@ function Gallery() {
             />
           </form>
           <div>
-            <QsectionAccordion />
+            <QsectionAccordion
+              onFilter={handleFilter}
+              productCatogories={productCatogories}
+            />
           </div>
         </section>
         <section className="flex  flex-col w-[75%]">
@@ -109,7 +129,7 @@ function Gallery() {
             </div>
           </div>
           <div className="grid grid-cols-5 gap-4 mt-5">
-            {nfts.map((nft) => (
+            {filtered.map((nft) => (
               <div
                 onClick={() =>
                   modalHandler(nft.bgcolor, nft.name, nft.serialno, nft.obj)
