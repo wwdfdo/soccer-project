@@ -15,7 +15,7 @@ function VideoBg() {
     <div className="relative h-screen w-full bg-viewportBg2 bg-no-repeat bg-cover bg-top ">
       <MouseParallaxContainer>
         <MouseParallaxChild factorX={0.08} factorY={0.05}>
-          <img className="w-1/2 mx-auto mt-28" src={player1} alt="" />
+          <img className="lg:w-1/2 w-3/4 mx-auto mt-28" src={player1} alt="" />
         </MouseParallaxChild>
 
         {/* <MouseParallaxChild factorX={0.08} factorY={0.05}>
@@ -46,7 +46,7 @@ function VideoBg() {
           </span>
         </button>
       </div> */}
-      <div className=" absolute top-[25%] right-[6%] bg-black bg-opacity-40 w-1/4 p-8 rounded-lg">
+      <div className=" absolute top-[25%] right-[6%] bg-black bg-opacity-40 w-1/4 p-8 rounded-lg hidden lg:block">
         <div className="mb-6">
           <h4 className="text-xl text-white hover:text-[#dc4eec] font-bold cursor-pointer">
             Football World Cup Finals
@@ -76,11 +76,11 @@ function VideoBg() {
       </div>
       <div className=" absolute bottom-10 left-10 flex flex-col gap-6">
         <p className="text-[#ff33ff] text-xl font-bold"> WELCOME</p>
-        <h2 className=" text-7xl font-bold text-white">
+        <h2 className=" lg:text-7xl text-4xl font-bold text-white">
           FOOTBALL CLUB <br />
           UNITED
         </h2>
-        <p className="text-lg text-gray-200">
+        <p className="lg:text-lg text-md text-gray-200">
           Ticket prices for the international challenge match between FC United
           <br />
           and Spain have been confirmed for October's encounter.
