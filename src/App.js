@@ -10,6 +10,7 @@ import RoadmapTwo from "./components/RoadmapTwo";
 import RoadmapThree from "./components/RoadmapThree";
 import RoadmapFour from "./components/RoadmapFour";
 import RoadmapHex from "./components/RoadmapHex";
+import RoadmapSeven from "./components/RoadmapSeven";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
           <Route path="/roadmapTwo" element={<RoadmapTwo />} />
           {/* <Route path="/roadmapThree" element={<RoadmapThree />} /> */}
           {/* <Route path="/roadmapThree" element={<RoadmapFour />} /> */}
-          <Route path="/roadmapThree" element={<RoadmapHex />} />
+          {/* <Route path="/roadmapThree" element={<RoadmapHex />} /> */}
+          <Route path="/roadmapThree" element={<RoadmapSeven />} />
         </Routes>
       </Layout>
     </div>
