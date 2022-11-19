@@ -54,7 +54,7 @@ function Gallery() {
   return (
     <div className=" bg-[#40085b]">
       <div className="flex w-[95%] mx-auto justify-between pt-[5rem]">
-        <section className="flex flex-col gap-2 mt-4 w-[22%] ">
+        <section className="lg:flex flex-col gap-2 mt-4 w-[22%] hidden ">
           <h2 className="text-2xl font-bold pb-9 border-b-[.0825rem] border-black border-opacity-10 text-white">
             FILTER
           </h2>
@@ -81,7 +81,7 @@ function Gallery() {
             />
           </div>
         </section>
-        <section className="flex  flex-col w-[75%]">
+        <section className="flex  flex-col lg:w-[75%] w-full">
           <div className="flex justify-between items-center border-b-[.0825rem] border-black border-opacity-10 pb-8">
             <div className="flex bg-gray-300 p-2 gap-2 rounded-lg text-lg font-bold">
               <button className=" bg-gray-400 w-20 p-1 rounded-lg focus:bg-slate-200">
@@ -94,7 +94,7 @@ function Gallery() {
             <div className="flex gap-5 items-center">
               <p className="text-4xl text-gray-400 flex items-center">1000</p>
               <div className="flex gap-4 items-center">
-                <button className="bg-gray-400 flex items-center p-2 rounded-lg text-sm gap-2 font-semibold">
+                <button className="bg-gray-400 lg:flex items-center p-2 rounded-lg text-sm gap-2 font-semibold hidden">
                   {" "}
                   <span>
                     <HiCollection />
@@ -107,7 +107,7 @@ function Gallery() {
               </div>
             </div>
           </div>
-          <div className="flex bg-[#282733] w-full rounded-lg mt-10">
+          <div className="lg:flex bg-[#282733] w-full rounded-lg mt-10 hidden">
             <video
               loop="true"
               autoplay="autoplay"
@@ -117,7 +117,7 @@ function Gallery() {
               <source src={Gvideo} type="video/mp4" />
             </video>
 
-            <div className=" py-2  px-12 flex flex-col justify-center gap-2">
+            <div className=" py-2  px-12 flex flex-col justify-center gap-2 ">
               <h2 className="text-4xl font-extrabold text-white">
                 FIND YOUR SIDEKICK
               </h2>
@@ -134,7 +134,7 @@ function Gallery() {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-5 gap-4 mt-5">
+          <div className="grid lg:grid-cols-5 grid-cols-2 gap-4 mt-5">
             {filtered.map((nft) => (
               <div
                 onClick={() =>
