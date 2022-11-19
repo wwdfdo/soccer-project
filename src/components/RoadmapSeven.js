@@ -3,8 +3,9 @@ import React from "react";
 function RoadmapSeven() {
   return (
     <div className="h-screen relative flex justify-center items-center mt-12">
-      <div>
+      <div className="relative">
         <svg
+          className="transition ease-in-out delay-150  hover:scale-110"
           width="248"
           height="249"
           viewBox="0 0 288 289"
@@ -16,10 +17,13 @@ function RoadmapSeven() {
             stroke="black"
           />
         </svg>
+        <div className=" absolute top-24 left-10 font-bold">
+          FOOTBALL TOURNAMENT
+        </div>
       </div>
       <div className="relative">
         <svg
-          className=" absolute top-[120px] right-[-24px]"
+          className=" absolute top-[120px] right-[-24px] transition ease-in-out delay-150  hover:scale-110"
           width="212"
           height="148"
           viewBox="0 0 232 168"
@@ -34,7 +38,7 @@ function RoadmapSeven() {
       </div>
       <div className="relative">
         <svg
-          className=" absolute  bottom-[117px] right-[46px] "
+          className=" absolute  bottom-[117px] right-[46px] transition ease-in-out delay-150  hover:scale-110"
           width="255"
           height="202"
           viewBox="0 0 285 232"
@@ -49,7 +53,7 @@ function RoadmapSeven() {
       </div>
       <div className="relative">
         <svg
-          className=" absolute left-[-406px] top-[-175px] "
+          className=" absolute left-[-406px] top-[-175px] transition ease-in-out delay-150  hover:scale-110 "
           width="167"
           height="212"
           viewBox="0 0 187 232"
@@ -64,7 +68,7 @@ function RoadmapSeven() {
       </div>
       <div className="relative">
         <svg
-          className=" absolute right-[192px] top-[47px] "
+          className=" absolute right-[192px] top-[47px]  transition ease-in-out delay-150  hover:scale-110"
           width="193"
           height="191"
           viewBox="0 0 213 211"
@@ -80,7 +84,7 @@ function RoadmapSeven() {
 
       <div className="relative">
         <svg
-          className=" absolute left-[-69px] bottom-[35px] "
+          className=" absolute left-[-69px] bottom-[35px] transition ease-in-out delay-150  hover:scale-110 "
           width="207"
           height="212"
           viewBox="0 0 227 232"
