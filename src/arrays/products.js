@@ -26,8 +26,9 @@ export const nfts = [
     price: "NO.6456",
     batch: "common",
     id: 1,
-    name: nft1,
-    bgcolor: "bg-[#256614]",
+
+    name: nft4,
+    bgcolor: "bg-[#59595C]",
     serialno: 243,
     obj: [
       { category: "TYPE:", type: "HUMAN", icon: <BiFace size={24} /> },
@@ -67,9 +68,11 @@ export const nfts = [
     price: "NO.6767",
     batch: "epic",
     id: 2,
-    name: nft2,
-    bgcolor: "bg-[#3C0656]",
+
+    name: nft1,
+    bgcolor: "bg-[#256614]",
     serialno: 453,
+
     obj: [
       { category: "TYPE:", type: "HUMAN", icon: <BiFace size={24} /> },
       {
@@ -160,8 +163,8 @@ export const nfts = [
     batch: "champion",
     price: "NO.3476",
     id: 4,
-    name: nft4,
-    bgcolor: "bg-[#59595C]",
+    name: nft2,
+    bgcolor: "bg-[#3C0656]",
     serialno: 898,
     obj: [
       { category: "TYPE:", type: "HUMAN", icon: <BiFace size={24} /> },
