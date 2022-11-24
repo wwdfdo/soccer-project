@@ -11,7 +11,7 @@ const QsectionAccordion = (props) => {
       {productCatogories.map((Question) => (
         <div
           key={Question.id}
-          className={` mb-3 border-b-[.0825rem] border-black border-opacity-10 pb-3 ${
+          className={` mb-3 border-b-[.0825rem] border-black border-opacity-10 pb-3 cursor-pointer ${
             filteredCatogryName === Question.batch
               ? "text-[#ff33ff]"
               : "text-white"
