@@ -1,12 +1,14 @@
 import React from "react";
 
+import "./RoadmapSeven.css";
+
 function RoadmapSeven() {
   return (
-    <div className="h-screen relative flex justify-center items-center mt-12">
-      <div className="relative">
+    <div className="h-screen relative flex justify-center items-center mt-12 ">
+      <div className="relative  ">
         <svg
           className="transition ease-in-out delay-150  hover:scale-110"
-          width="248"
+          width="249"
           height="249"
           viewBox="0 0 288 289"
           fill="#07DA35"
@@ -17,6 +19,7 @@ function RoadmapSeven() {
             stroke=""
           />
         </svg>
+
         <div className=" absolute top-24 left-10 font-bold">
           FOOTBALL TOURNAMENT
         </div>

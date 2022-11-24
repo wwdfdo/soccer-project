@@ -12,7 +12,7 @@ module.exports = {
         viewportBg3: "url('/src/images/stadium4.jpeg')",
         viewportBg4: "url('/src/images/stadium11.png')",
         stadium2: "url('/src/images/stadium2.webp')",
-        hex1: "url('/src/images/hexagon2.svg')",
+        hex1: "url('/src/images/Polyslice5.svg')",
       },
     },
   },

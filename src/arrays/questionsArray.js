@@ -33,16 +33,16 @@ export const QuestionArray = [
     answer: ["CHILD", "BLUE", "RED", "GREEN"],
     icon: <BiFace size={22} />,
   },
-  {
-    id: 5,
-    qtitle: "HAIR",
-    answer: ["GIRL", "BLUE", "RED", "GREEN"],
-    icon: <GiLoincloth size={22} />,
-  },
-  {
-    id: 6,
-    qtitle: "FACE",
-    answer: ["BOY", "BLUE", "RED", "GREEN"],
-    icon: <BiFace size={22} />,
-  },
+  // {
+  //   id: 5,
+  //   qtitle: "HAIR",
+  //   answer: ["GIRL", "BLUE", "RED", "GREEN"],
+  //   icon: <GiLoincloth size={22} />,
+  // },
+  // {
+  //   id: 6,
+  //   qtitle: "FACE",
+  //   answer: ["BOY", "BLUE", "RED", "GREEN"],
+  //   icon: <BiFace size={22} />,
+  // },
 ];

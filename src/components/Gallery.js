@@ -20,6 +20,7 @@ function Gallery() {
   const [selectedCatogory, setSelectedCatogory] = useState();
   const [produts, setProducts] = useState([]);
   const [productCatogories, setProductCatogories] = useState([]);
+  const [filteredCatogryName, setFilteredCatogoryName] = useState();
 
   const modalHandler = (bgcolor, modalImg, modalSrialNo, modalobj) => {
     setOpenModal(true);
@@ -35,16 +36,17 @@ function Gallery() {
 
   const handleFilter = (choosedProduct) => {
     setSelectedCatogory(choosedProduct);
+    setFilteredCatogoryName(choosedProduct.batch);
   };
 
   useEffect(() => {
     const allCatogories = [
-      { qtitle: "All Players", icon: <HiUserGroup size={22} /> },
+      { id: "", qtitle: "All Players", icon: <HiUserGroup size={22} /> },
       ...QuestionArray,
     ];
     setProducts(nfts);
     setProductCatogories(allCatogories);
-  });
+  }, []);
 
   const filtered =
     selectedCatogory && selectedCatogory.batch
@@ -52,7 +54,7 @@ function Gallery() {
       : produts;
 
   return (
-    <div className=" bg-[#40085b]">
+    <div className=" bg-[#40085b] pb-10">
       <div className="flex w-[95%] mx-auto justify-between pt-[5rem]">
         <section className="lg:flex flex-col gap-2 mt-4 w-[22%] hidden ">
           <h2 className="text-2xl font-bold pb-9 border-b-[.0825rem] border-black border-opacity-10 text-white">
@@ -78,6 +80,7 @@ function Gallery() {
             <QsectionAccordion
               onFilter={handleFilter}
               productCatogories={productCatogories}
+              filteredCatogryName={filteredCatogryName}
             />
           </div>
         </section>
@@ -109,8 +112,8 @@ function Gallery() {
           </div>
           <div className="lg:flex bg-[#282733] w-full rounded-lg mt-10 hidden">
             <video
-              loop="true"
-              autoplay="autoplay"
+              loop
+              autoplay="autoPlay"
               muted
               className="w-[180px]  rounded-bl-md rounded-tl-md"
             >
@@ -137,6 +140,7 @@ function Gallery() {
           <div className="grid lg:grid-cols-5 grid-cols-2 gap-4 mt-5">
             {filtered.map((nft) => (
               <div
+                key={nft.id}
                 onClick={() =>
                   modalHandler(nft.bgcolor, nft.name, nft.serialno, nft.obj)
                 }

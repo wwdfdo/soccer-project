@@ -4,14 +4,18 @@ import { useState } from "react";
 const QsectionAccordion = (props) => {
   const [visibleAccordionId, setVisibleAccordionId] = useState(null);
 
-  const { onFilter, productCatogories } = props;
+  const { onFilter, productCatogories, filteredCatogryName } = props;
 
   return (
     <>
       {productCatogories.map((Question) => (
         <div
           key={Question.id}
-          className="mb-3 border-b-[.0825rem] border-black border-opacity-10 pb-3 text-white"
+          className={` mb-3 border-b-[.0825rem] border-black border-opacity-10 pb-3 ${
+            filteredCatogryName === Question.batch
+              ? "text-[#ff33ff]"
+              : "text-white"
+          }`}
           onClick={() => onFilter(Question)}
         >
           <div
@@ -22,17 +26,17 @@ const QsectionAccordion = (props) => {
               )
             }
           >
-            <h3 className=" font-bold tracking-widest text-[.825rem] flex items-center py-2">
+            <h3 className=" font-bold tracking-widest text-[.925rem] flex items-center py-2">
               <span className="pr-5">{Question.icon}</span>
               {Question.qtitle}
             </h3>
-            <span className="text-sm">
+            {/* <span className="text-sm">
               <i
                 className={`fa-solid ${
                   visibleAccordionId === Question.id ? "fa-minus" : "fa-plus"
                 } `}
               ></i>
-            </span>
+            </span> */}
           </div>
           {/* <div
             className={`${
@@ -41,7 +45,7 @@ const QsectionAccordion = (props) => {
           >
             <ul>
               {Question.answer.map((a) => (
-                <li className="text-[.825rem] font-medium tracking-widest mt-2">
+                <li className="text-[.825rem] font-medium tracking-widest mt-2" key={a.id}>
                   <input type="checkbox" id={a} name={a} value={a} />
                   <label for="vehicle1"> {a}</label>
                 </li>
