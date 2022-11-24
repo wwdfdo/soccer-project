@@ -115,7 +115,7 @@ function Gallery() {
               loop
               autoplay="autoPlay"
               muted
-              className="w-[180px]  rounded-bl-md rounded-tl-md"
+              className="w-[180px]  rounded-bl-md rounded-tl-md object-cover"
             >
               <source src={Gvideo} type="video/mp4" />
             </video>
