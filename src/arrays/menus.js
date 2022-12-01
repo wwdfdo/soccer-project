@@ -38,7 +38,7 @@ export const menus = [
   {
     id: 8,
     name: <FaUser size={20} />,
-    url: "/",
+    url: "/login",
   },
   // {
   //   id: 8,

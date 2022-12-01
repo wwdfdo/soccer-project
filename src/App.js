@@ -7,10 +7,11 @@ import Layout from "./components/Layout";
 import Roadmap from "./components/Roadmap";
 import Worldbg from "./components/Worldbg";
 import RoadmapTwo from "./components/RoadmapTwo";
-import RoadmapThree from "./components/RoadmapThree";
-import RoadmapFour from "./components/RoadmapFour";
-import RoadmapHex from "./components/RoadmapHex";
+// import RoadmapThree from "./components/RoadmapThree";
+// import RoadmapFour from "./components/RoadmapFour";
+// import RoadmapHex from "./components/RoadmapHex";
 import RoadmapSeven from "./components/RoadmapSeven";
+import AuthForm from "./components/Auth/AuthForm";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           {/* <Route path="/roadmapThree" element={<RoadmapFour />} /> */}
           {/* <Route path="/roadmapThree" element={<RoadmapHex />} /> */}
           <Route path="/roadmapThree" element={<RoadmapSeven />} />
+          <Route path="/login" element={<AuthForm />} />
         </Routes>
       </Layout>
     </div>

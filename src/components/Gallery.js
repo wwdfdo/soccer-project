@@ -23,6 +23,7 @@ function Gallery() {
   const [filteredCatogryName, setFilteredCatogoryName] = useState();
 
   const modalHandler = (bgcolor, modalImg, modalSrialNo, modalobj) => {
+    console.log(bgcolor);
     setOpenModal(true);
     setModalColor(bgcolor);
     setModalImg(modalImg);
@@ -140,6 +141,7 @@ function Gallery() {
           <div className="grid lg:grid-cols-5 grid-cols-2 gap-4 mt-5">
             {filtered.map((nft) => (
               <div
+                className="cursor-pointer"
                 key={nft.id}
                 onClick={() =>
                   modalHandler(nft.bgcolor, nft.name, nft.serialno, nft.obj)
